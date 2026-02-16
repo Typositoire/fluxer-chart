@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxer Helm Chart Repository</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .code-block {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        .code-block code {
+            color: #333;
+            font-size: 0.9em;
+        }
+        
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #17a2b8;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .info-box strong {
+            color: #17a2b8;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        .chart-version {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Fluxer Helm Chart</h1>
+            <p>Helm Chart Repository for deploying Fluxer in Kubernetes</p>
+            <span class="chart-version">v0.1.0</span>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📦 About</h2>
+                <p>This is a Helm chart repository for deploying Fluxer in Kubernetes environments. Fluxer provides a streamlined way to manage your Kubernetes deployments.</p>
+            </div>
+            
+            <div class="section">
+                <h2>🔧 Installation</h2>
+                <p>To use this Helm chart repository, follow these steps:</p>
+                
+                <h3 style="margin-top: 20px; color: #555;">1. Add the Helm Repository</h3>
+                <div class="code-block">
+                    <code>helm repo add fluxer-chart https://typositoire.github.io/fluxer-chart/</code>
+                </div>
+                
+                <h3 style="margin-top: 20px; color: #555;">2. Update Your Helm Repositories</h3>
+                <div class="code-block">
+                    <code>helm repo update</code>
+                </div>
+                
+                <h3 style="margin-top: 20px; color: #555;">3. Install the Chart</h3>
+                <div class="code-block">
+                    <code>helm install my-fluxer fluxer-chart/fluxer-chart</code>
+                </div>
+                
+                <div class="info-box">
+                    <strong>💡 Tip:</strong> You can customize your installation using a values file:
+                    <div class="code-block" style="margin-top: 10px; background: white;">
+                        <code>helm install my-fluxer fluxer-chart/fluxer-chart -f custom-values.yaml</code>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📚 Available Charts</h2>
+                <ul>
+                    <li><strong>fluxer-chart</strong> (v0.1.0) - A Helm chart for deploying Fluxer in Kubernetes</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🔍 Chart Details</h2>
+                <p>View the complete chart configuration and available values:</p>
+                <div class="code-block">
+                    <code>helm show values fluxer-chart/fluxer-chart</code>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📖 Resources</h2>
+                <ul>
+                    <li><a href="https://github.com/Typositoire/fluxer-chart" target="_blank">GitHub Repository</a></li>
+                    <li><a href="index.yaml">Helm Repository Index</a></li>
+                    <li><a href="fluxer-chart-0.1.0.tgz">Download Chart Package (v0.1.0)</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Maintained by <a href="https://github.com/Typositoire" target="_blank">Typositoire</a></p>
+            <p style="margin-top: 5px; font-size: 0.9em;">Built with ❤️ using Helm</p>
+        </footer>
+    </div>
+</body>
+</html>
