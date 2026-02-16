@@ -3,12 +3,12 @@ entries:
   fluxer-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-02-16T19:07:34.522294366Z"
+    created: "2026-02-16T19:08:52.884354921Z"
     description: A Helm chart for deploying Fluxer in Kubernetes.
-    digest: 07d844e82f176add8f07a2c5d2e392c0af5fe39c759ae9192dc5295a07710ff7
+    digest: 9e1bff9fe558be567235cc256dd7abbe3cbeb6dd9f7596425f9c127676a2d9ff
     name: fluxer-chart
     type: application
     urls:
     - https://typositoire.github.io/fluxer-chart/fluxer-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-16T19:07:34.521524091Z"
+generated: "2026-02-16T19:08:52.883586588Z"
