@@ -1,6 +1,7 @@
 # Fluxer Helm Chart
 
 [![Release Charts](https://github.com/Typositoire/fluxer-chart/actions/workflows/release.yml/badge.svg)](https://github.com/Typositoire/fluxer-chart/actions/workflows/release.yml)
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/fluxer)](https://artifacthub.io/packages/search?repo=fluxer)
 
 A Helm chart for deploying Fluxer in Kubernetes.
 
