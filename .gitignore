@@ -1,0 +1,21 @@
+# Helm (except docs directory for GitHub Pages)
+*.tgz
+!docs/*.tgz
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
